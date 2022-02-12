@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #222831;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: #222831;
+    color: #fff;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+img.logo-navbar {
+    width: 60px;
+}
+span.code-this {
+    color: #D65A31;
+}
+span.code-is {
+    color: #D65A31;
+}
+span.code-colon {
+    color: #D65A31;
+}
+.typing {
+    color: #fff;
+    overflow: hidden;
+    border-right: 0.15em solid #D65A31;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 1s steps(30, end),
+    cursor-blink 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes cursor-blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #D65A31;
+    }
+}
+.container {
+    margin-inline: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-content {
+    color: #fff;
+}
+.right-content {
+    color: #fff;
+}
+h3.up-title {
+    font-weight: 100;
+    font-size: .8rem;
+}
+h1.name.title {
+    font-weight: 900;
+    font-size: 5rem;
+}
+.left {
+    max-width: 540px;
+    float: right;
+}
+p.desc {
+    font-weight: lighter;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.label {
+    padding: 0.4rem;
+    background: #D65A31;
+    width: fit-content;
+    border-radius: 5px;
+}
+img.right-image {
+    max-width: 500px;
+    width: 100%;
+}
+
+button.button-cv {
+    padding: 1rem;
+    background: #EEEEEE;
+    border: 0;
+    border-radius: 4px;
+    color: #222831;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button.button-cv:hover {
+    background: #cccccc;
+}
+button.button-hire-me {
+    padding: 1rem;
+    background: #D65A31;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button.button-hire-me:hover {
+    background: #913819;
+}
+i.fa-solid.fa-circle-right.rightButton {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+i.fa-solid.fa-file-pdf.leftButton {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.left.wide {
+    max-width: 1040px;
+}
+h1#chi-sono {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h1#competenze {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container.reverse.reveal {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+img.images-competence {
+    width: 100%;
+}
+.html-trinity {
+    width: 100%;
+    max-width: 390px;
+    margin-right: 3rem;
+}
+h1.name.title.competence {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.left.wide.competence {
+    color: #ffffff;
+}
+img.images-competence.js {
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+.left-wide.wide-image {
+    width: 100%;
+}
+img.images-competence.js-ts {
+    border-radius: 12px;
+}
+.js-ts {
+    width: 100%;
+    max-width: 390px;
+    margin-left: 1rem;
+}
+.scene,
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+img.images-competence.node {
+    border-radius: 10px;
+    max-width: 360px;
+}
+
+@media (max-width: 993px) {
+    .js-ts {
+        margin-left: 0px;
+    }
+}
